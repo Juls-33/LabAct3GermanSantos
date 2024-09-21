@@ -1,6 +1,7 @@
 /* table */
 
 table{
+    background-color: white;
     border: solid black 1px;
     text-align: center;
     border-collapse: collapse;
@@ -45,3 +46,40 @@ table th{
 table .yellow-row{
     background-color: rgba(251, 215, 70, 0.50);
 }
+.cell{
+    padding: 10px;
+}
+
+/* fonts */
+
+.th-special{
+    padding: 0.5rem;
+    font-weight: 800;
+}
+.th-normal{
+    padding: 0.5rem;
+    font-weight: 500;
+}
+.promo{
+    padding: 0.3rem;
+}
+h3.special-header{
+    color: #06397E;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+h3.special-price{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+p.promo{
+    font-size: 0.7em;
+    font-weight: 500;
+
+}
+
+.td-text{
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
