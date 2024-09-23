@@ -31,7 +31,7 @@ body {
 }
 
 header {
-    background-color: rgb(6, 57, 126);
+    background-color: #06397e;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -80,14 +80,14 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: rgb(6, 57, 126);
+    color: #06397e;
     font-weight: 500;
     margin: 0 15px;
 }
 
 #highlight {
     color: white;
-    background-color: rgb(6, 57, 126);
+    background-color: #06397e;
     border-radius: 15px;
     padding: 2px 6px;
 }
@@ -96,6 +96,52 @@ header {
     width: 100%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
 }
+
+/* footer */
+footer .container{
+    background-color: #06397e ;
+    color: white;
+    display: inline-block;
+    left:0;
+    bottom: 0;
+    min-height: 100px;
+    height: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+footer span{
+    height: 100%;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+span.image{
+    height: 100%;
+    padding-right: 10px;
+    border-right: white solid 1px;
+    float: left;
+}
+span.managers{
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-style: italic;
+}
+span.contacts{
+    width: 30%;
+    right: 0;
+    padding-top: 5px;
+    float:right;
+    text-align: right;
+    font-style: italic;
+    word-wrap: break-word;
+}
+.image{
+    height: 100%;
+}
+
 
 /* tablet */
 @media (max-width: 768px) {
