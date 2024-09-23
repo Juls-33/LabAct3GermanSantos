@@ -1,12 +1,150 @@
-main {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);    
-    padding: 20px;
-    width: 60%;
-    max-width: 600px;
-    text-align: left;
-     font-size: 0.8rem; /*Pinaliit ko onti */
-    margin-top: 50px; /* Adjust margin instead of using transform */
+.blue-bar {
+    width: 100%;
+    height: 8rem;
+    background-color: #06397e;  
+    position: relative; 
+    transform: translateY(-150%);
+    z-index: -1; 
 }
+
+main {
+    max-width: 800px; 
+    width: 100%; 
+    height: 15.625rem; 
+    margin: 2.5rem auto 0; 
+    padding: 1.25rem; 
+    background-color: white; 
+    position: relative; 
+}
+
+main h2, p {
+    color: #06397e;
+}
+
+#map {
+    display: inline-block; 
+    margin-right: 0; 
+    float: left; 
+    max-width: 40%; 
+    height: auto; 
+    border: 1px solid black;
+}
+
+.right-aligned-image {
+    position: absolute; 
+    right: 1.25rem; 
+    top: 1.25rem; 
+    max-width: 6.25rem; 
+    height: auto; 
+}
+
+/* ads */
+ad {
+    max-width: 1300px; 
+    width: 100%; 
+    height: auto; 
+    margin: 2.5rem auto 0; 
+    padding: 1.25rem; 
+    transform: translateY(-19%);
+    background-color: white; 
+    position: relative; 
+    border: dotted #42728d;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+}
+
+#adlogo {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.lightblue-bar {
+    width: 80.9rem;
+    margin: 1.5rem auto 0; 
+    height: 4rem;
+    background-color: #42728d;  
+    position: relative; 
+    z-index: 1; 
+    transform: translateY(-1230%);
+}
+/* ad new */
+.ad-container, .ad-banner{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.ad-banner{
+    background-color: #42728d;
+    color: white;
+    text-align: left;
+    height: auto;
+    align-items: center;
+}
+#adlogo{
+    float:left;  
+    height:4rem;
+    object-fit: scale-down;
+    margin: auto 0;
+    /* width: 10rem; */
+}
+.ad-banner .yellow{
+    color: #FBD748;
+}
+.ad-container{
+    height: 18rem;
+}
+.left-ad{
+    display: block;
+    width: 50%;
+    background-color: white;
+    padding: 1rem;
+}
+.left-ad h2{
+    color: #06397e;
+    font-weight: 900;
+}
+.left-ad p{
+    font-size: 0.9rem;
+    color:  black;
+    font-weight: 600;
+}
+.left-ad h2, .left-ad p, .left-ad li{
+    /* border: red solid; */
+    margin: 0;
+    padding: 0 1rem;
+}
+.lists{
+    padding: 0.5rem 0;
+    padding-left:2rem;
+    font-size: 0.9rem;
+}
+.left-ad img{
+    width: 50px;
+}
+.mid-ad{
+    display: flex;
+    width: 2.1rem;
+}
+.mid-ad img{
+    object-fit: cover;
+    /* min-height: 20rem; */
+}
+.right-ad{
+    display: inline-flex;
+    width: 50%;
+}
+.right-ad img{
+    object-fit: cover;
+    width: 100%;
+}
+@media (max-width: 481px){
+    .ad-container{
+        height: 30rem;
+    }
+}
+
+
+
 

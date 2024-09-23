@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
-/* header */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,42 +8,37 @@
 }
 
 body {
-    background-image: url("../images/bluetile.png");  
-      /* background-size: cover;  */
-      background-position: center; 
-      background-repeat: repeat; 
-      height: 100%; 
-      object-fit: none;
+    background-image: url("../images/bluetile.png");
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
 }
 
 .container {
-    /* background-color: rgb(255, 255, 255); */
-    max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* min-height: 100vh; */
 }
 
 .headertonav {
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 header {
     background-color: #06397e;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
     width: 100%;
-    position: sticky;
-    top: 0;
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-right: 0.625rem;
 }
 
 .search-container {
@@ -53,28 +48,28 @@ header {
 
 #search {
     width: 100%;
-    height: 30px;
-    border-radius: 12px;
-    padding: 0.3rem 40px 0.3rem 10px;
+    height: 1.875rem;
+    border-radius: 0.75rem;
+    padding: 0.1875rem 2.5rem 0.1875rem 0.625rem;
     border: 1px solid #ccc;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 #searchicon {
     position: absolute;
-    right: 10px;
+    right: 0.625rem;
     top: 50%;
     transform: translateY(-50%);
     width: 5%;
     height: auto;
-    max-width: 20px;
+    max-width: 1.25rem;
     cursor: pointer;
 }
 
 .navigation {
     background-color: white;
     width: 100%;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
 }
 
@@ -82,102 +77,151 @@ header {
     text-decoration: none;
     color: #06397e;
     font-weight: 500;
-    margin: 0 15px;
+    margin: 0 0.9375rem;
 }
 
 #highlight {
     color: white;
     background-color: #06397e;
-    border-radius: 15px;
-    padding: 2px 6px;
+    border-radius: 0.9375rem;
+    padding: 0.125rem 0.375rem;
 }
 
 #banner {
     width: 100%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+
 /* footer */
-footer .container{
-    background-color: #06397e ;
+footer .container {
+    position:static;
+    background-color: #06397e;
     color: white;
     display: inline-block;
-    left:0;
     bottom: 0;
-    min-height: 100px;
+    min-height: 5rem; 
     height: 1rem;
     width: 100%;
     padding: 1rem 2rem;
+    margin-top: 2.5rem; 
 }
 
-footer span{
+footer span {
     height: 100%;
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 0.7rem; 
 }
 
-span.image{
+span.image {
     height: 100%;
-    padding-right: 10px;
+    padding-right: 0.625rem; 
     border-right: white solid 1px;
     float: left;
 }
-span.managers{
+
+span.managers {
     width: 50%;
     height: 100%;
-    padding-left: 15px;
-    padding-top: 5px;
+    padding-left: 0.9375rem; 
+    padding-top: 0.3125rem; 
     font-style: italic;
 }
-span.contacts{
+
+span.contacts {
     width: 30%;
     right: 0;
-    padding-top: 5px;
-    float:right;
+    padding-top: 0.3125rem; 
+    float: right;
     text-align: right;
     font-style: italic;
     word-wrap: break-word;
 }
-.image{
+
+.image {
     height: 100%;
 }
 
-
-/* tablet */
 @media (max-width: 768px) {
     #logo {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem; 
+        height: 2.5rem; 
     }
 
     #search {
-        height: 30px;
-        padding: 0.2rem 30px 0.2rem 10px;
+        height: 1.875rem; 
+        padding: 0.125rem 1.875rem 0.125rem 0.625rem; 
     }
 
     #searchicon {
-        max-width: 15px;
+        max-width: 0.9375rem; 
     }
+
+    .blue-bar {
+        height: 6.25rem; 
+        top: 50%;  
+    }
+
+    /* main {
+        height: 12.5rem; 
+        margin-top: 1.25rem; 
+    } */
 }
 
-/* phone */
 @media (max-width: 480px) {
     #search {
-        height: 30px;
-        padding: 0.2rem 25px 0.2rem 10px;
-        font-size: 12px;
+        height: 1.875rem; 
+        padding: 0.125rem 1.5625rem 0.125rem 0.625rem; 
+        font-size: 0.75rem; 
     }
 
     #logo {
-        width: 35px;
-        height: 35px;
+        width: 2.1875rem; 
+        height: 2.1875rem; 
     }
 
     #searchicon {
-        max-width: 12px;
+        max-width: 0.75rem; 
     }
 
     .navigation {
-        font-size: 12px;
+        font-size: 0.75rem; 
     }
+
+    footer .container {
+        background-color: #06397e;
+        color: white;
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        min-height: 3.75rem; 
+        height: 1rem;
+        width: 100vw;
+        padding: 0.3125rem; 
+        font-size: 0.4375rem; 
+    }
+
+    span.managers, 
+    span.contacts {
+        font-size: 0.4375rem; 
+        padding-top: 0.4375rem; 
+    }
+
+    span.managers {
+        padding-left: 0.4375rem; 
+    }
+
+    span.contacts {
+        padding-right: 0.4375rem; 
+    }
+
+    .blue-bar {
+        height: 5rem; 
+        top: 50%;  
+    }
+
+    /* main {
+        height: 11.25rem; 
+        margin-top: 0.625rem; 
+    } */
 }
