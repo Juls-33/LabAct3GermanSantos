@@ -168,7 +168,7 @@ span.contacts {
     } */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
     #search {
         height: 1.875rem; 
         padding: 0.125rem 1.5625rem 0.125rem 0.625rem; 
