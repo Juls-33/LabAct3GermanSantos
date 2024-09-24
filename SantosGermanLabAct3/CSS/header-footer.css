@@ -106,8 +106,8 @@ footer .container {
     color: white;
     display: inline-block;
     bottom: 0;
-    min-height: 5rem; 
-    height: 1rem;
+    /* min-height: 5rem;  */
+    height: auto;
     width: 100%;
     padding: 1rem 2rem;
     margin-top: 2.5rem; 
@@ -125,10 +125,13 @@ span.image {
     border-right: white solid 1px;
     float: left;
 }
+span.image img{
+    width: 4rem;
+}
 
 span.managers {
     width: 50%;
-    height: 100%;
+    height: auto;
     padding-left: 0.9375rem; 
     padding-top: 0.3125rem; 
     font-style: italic;
@@ -168,10 +171,6 @@ span.contacts {
         top: 50%;  
     }
 
-    /* main {
-        height: 12.5rem; 
-        margin-top: 1.25rem; 
-    } */
 }
 
 @media (max-width: 481px) {
@@ -225,9 +224,4 @@ span.contacts {
         height: 5rem; 
         top: 50%;  
     }
-
-    /* main {
-        height: 11.25rem; 
-        margin-top: 0.625rem; 
-    } */
 }
