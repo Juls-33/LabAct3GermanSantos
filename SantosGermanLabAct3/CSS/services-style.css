@@ -1,0 +1,49 @@
+.card{
+    background-color: white;
+    color: #06397e;
+    display: block;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem 2em;
+    border-radius: 24px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card ul{
+    margin-bottom: 0.5rem;
+}
+.card ul li{
+    list-style: none;
+    background-image: url('../images/pawprint.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2rem;
+    padding-left: 2.5rem;
+}
+.card h1{
+    display: inline;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.card p{
+    padding-left: 2.5rem;
+    font-size: 1rem;;
+}
+.card .img-container{
+    display: flex;
+    width: 100%;
+    height: 20rem;  
+    padding:0;
+    margin-top: 1rem;
+}
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:500px) {
+    .card h1{
+        word-break: break-all;
+    }
+}

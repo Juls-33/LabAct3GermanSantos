@@ -91,6 +91,12 @@ header {
     width: 100%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
+.label{
+    color: #06397e;
+    text-align: center;
+    background-color: white;
+    padding: 0.7rem 0;
+}
 
 
 /* footer */

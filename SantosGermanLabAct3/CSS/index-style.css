@@ -12,7 +12,8 @@ main {
     width: 80%; 
     height: 15.625rem; 
     margin: 2.5rem auto 0; 
-    padding: 1.25rem; 
+    padding: 1.25rem;
+    border-radius: 12px; 
     background-color: white; 
     position: relative; 
     display: flex;
@@ -60,6 +61,8 @@ main h2, p {
     justify-content: center; 
     align-items: center;   
     margin-top: -120px; 
+    border: dotted #06397e 5px;
+    border-bottom: none;
 }
 #adlogo{
     float:left;  
@@ -75,6 +78,9 @@ main h2, p {
     height: 18rem;
     max-height: 30rem;
     flex-direction: row;
+    background-color: white;
+    border: dotted #06397e 5px;
+    border-top: none;
 }
 .left-ad{
     display: block;
