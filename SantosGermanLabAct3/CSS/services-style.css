@@ -42,7 +42,7 @@
     object-fit: cover;
 }
 
-@media(max-width:500px) {
+@media(max-width:600px) {
     .card h1{
         word-break: break-all;
     }
