@@ -77,6 +77,23 @@ h3.special-price{
     font-weight: 600;
     font-size: 1.2em;
 }
+
+.special-price {
+    animation: red-blink 3s infinite alternate; 
+}
+
+@keyframes red-blink {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: red; 
+    }
+    100% {
+        color: #ffffff; 
+    }
+}
+
 p.promo{
     font-size: 0.7em;
     font-weight: 500;
