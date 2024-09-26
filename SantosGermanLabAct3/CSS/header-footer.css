@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     /* min-height: 100vh; */
+    flex: 1;
 }
 
 .headertonav {
@@ -80,6 +81,11 @@ header {
     margin: 0 0.9375rem;
 }
 
+.navigation a:hover {
+    color: #ffcc00; 
+    text-decoration: underline;
+}
+
 #highlight {
     color: white;
     background-color: #06397e;
@@ -101,7 +107,7 @@ header {
 
 /* footer */
 footer .container {
-    position:static;
+    position: relative;
     background-color: #06397e;
     color: white;
     display: inline-block;
@@ -193,6 +199,18 @@ span.contacts {
         font-size: 0.75rem; 
     }
 
+    #address {
+        font-size: 12px;
+    }
+
+    main {
+        height: 20rem;
+    }
+
+    .blue-bar {
+        transform: translateY(-260%);
+    }
+
     footer .container {
         background-color: #06397e;
         color: white;
@@ -223,5 +241,11 @@ span.contacts {
     .blue-bar {
         height: 5rem; 
         top: 50%;  
+    }
+
+    .left-ad {
+        padding: 0px;
+        margin-top: 1em;
+        font-size: 12px;
     }
 }
