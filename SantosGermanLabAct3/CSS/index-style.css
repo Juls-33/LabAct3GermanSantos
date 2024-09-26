@@ -20,6 +20,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 main h2, p {
@@ -29,6 +30,7 @@ main h2, p {
     width: 55%; 
     display: inline-block;
     height: 100%;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -38,6 +40,7 @@ main h2, p {
     align-items: center;
     display: flex;
 }
+
 #map {
     display: inline-block; 
     margin-right: 0; 
@@ -51,6 +54,8 @@ main h2, p {
     display: flex;
     margin: auto;
     width: 80%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
     
 }
 .ad-banner{
@@ -119,7 +124,9 @@ main h2, p {
 .left-ad img{
     width: 8rem;
     bottom: 0;
+    margin-bottom: 1rem;
 }
+
 .left-ad .avail{
     display: flex-end;
     float: right;
@@ -130,6 +137,8 @@ main h2, p {
 .mid-ad{
     display: flex;
     width: 2.1rem;
+    z-index: 1;
+    background-color: #fad12c;
 }
 .mid-ad img{
     object-fit: cover;
@@ -144,33 +153,31 @@ main h2, p {
     width: 100%;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1050px){
     .ad-container{
         height: 40rem;
     }
     main{
-        height: 20rem;
+        height: 22rem;
     }
     #address{
         width: 100%;
         height: auto;
-    }.blue-bar{
-        transform: translateY(-250%);
     }
+
 }
-@media screen and (max-width: 481px){
+@media screen and (max-width: 450px){
     .ad-container{
         height: 30rem;
     }
     .ad-banner{
         margin-top: -80px; 
     }
-    main{
-        height: 25rem;
-    }
+    
     #map-container{
-        width: 55%;
+        width: 90%;
     }
+
     .blue-bar{
         transform: translateY(-350%);
     }
