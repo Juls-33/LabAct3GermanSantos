@@ -4,8 +4,12 @@
     width: 80%;
     border: #06397E solid 1px;
     border-radius: 24px;
-    margin-top: 20px;    
- }
+    margin-top: 20px; 
+    opacity: 0.5;
+    transform: translateY(20px);  
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 0.1s; 
+}
 .guidelines{
     font-size: 0.8rem;
     font-style: italic;
@@ -14,12 +18,12 @@
     margin: auto;
 }
 
-section.guidelines {
+.scale{
     transition: transform 0.3s ease;
 }
 
-section.guidelines:hover {
-    transform: scale(1.1);
+.scale:hover {
+    transform: scale(1.03);
 }
 
 /* table */
@@ -33,9 +37,10 @@ table {
     text-align: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border: 2px solid #06397e; 
+    opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 0.5s forwards;
-    animation-delay: 0.1s; 
+    animation: fadeIn 0.7s forwards;
+    animation-delay: 0.3s; 
 }
 
 @keyframes fadeIn {
@@ -68,7 +73,7 @@ table .yellow-row{
 /* images */
 table img{
     width: 100%;
-    height:10rem; 
+    height:7rem; 
     object-fit: cover;
     display: block;
 }
@@ -76,10 +81,12 @@ table img{
 #mature-dog{object-position: 0% 40%;}
 #costume-dog{object-position: 0% 30%;}
 #cat-dog-hats{object-position: 0% 40%;}
-#luxury-small{height:8.9rem;}
+#luxury-small{height:7rem;}
 #luxury{object-position: 0% 60%;}
 /* fonts */
-
+td{
+    font-size: 1rem;
+}
 .th-special{
     padding: 0.5rem;
     font-weight: 800;
