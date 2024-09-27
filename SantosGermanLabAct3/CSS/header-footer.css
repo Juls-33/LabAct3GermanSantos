@@ -16,7 +16,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
     flex: 1;
 }
 
@@ -54,12 +53,10 @@ header {
     border: 1px solid #ccc;
     font-size: 0.8125rem;
 }
-
 #searchicon {
     position: absolute;
     right: 0.625rem;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 23%;
     width: 5%;
     height: auto;
     max-width: 1.25rem;
@@ -103,7 +100,6 @@ header {
     padding: 0.7rem 0;
 }
 
-
 /* footer */
 footer .container {
     position: relative;
@@ -111,13 +107,12 @@ footer .container {
     color: white;
     display: inline-block;
     bottom: 0;
-    /* min-height: 5rem;  */
+    min-height: 5rem; 
     height: auto;
     width: 100%;
     padding: 1rem 2rem;
     margin-top: 3.5rem; 
 }
-
 footer span {
     height: 100%;
     display: inline-block;
@@ -167,15 +162,6 @@ span.contacts {
         padding: 0.125rem 1.875rem 0.125rem 0.625rem; 
     }
 
-    #searchicon {
-        max-width: 0.9375rem; 
-    }
-
-    .blue-bar {
-        height: 6.25rem; 
-        top: 50%;  
-    }
-
 }
 
 @media (max-width: 481px) {
@@ -190,10 +176,6 @@ span.contacts {
         height: 2.1875rem; 
     }
 
-    #searchicon {
-        max-width: 0.75rem; 
-    }
-
     .navigation {
         font-size: 0.75rem; 
     }
@@ -202,27 +184,27 @@ span.contacts {
         font-size: 12px;
     }
 
-    /* main {
-        height: 20rem;
-    } */
-
-    .blue-bar {
+    /* .blue-bar {
         transform: translateY(-260%);
-    }
+    } */
 
     footer .container {
         background-color: #06397e;
         color: white;
         display: inline-block;
+        justify-content: center;
+        
         left: 0;
         bottom: 0;
         min-height: 3.75rem; 
-        height: 1rem;
+        height: auto;
         width: 100vw;
         padding: 0.3125rem; 
         font-size: 0.4375rem; 
     }
-
+    footer .col-2{
+        flex-direction: column;
+    }
     span.managers, 
     span.contacts {
         font-size: 0.4375rem; 
@@ -237,14 +219,20 @@ span.contacts {
         padding-right: 0.4375rem; 
     }
 
-    .blue-bar {
+    /* .blue-bar {
         height: 5rem; 
         top: 50%;  
-    }
+    } */
 
     .left-ad {
         padding: 0px;
         margin-top: 1em;
         font-size: 12px;
+    }
+}
+@media (max-width: 376px){
+    span.managers {
+        padding-left: 0.375rem; 
+        width: 49%;
     }
 }

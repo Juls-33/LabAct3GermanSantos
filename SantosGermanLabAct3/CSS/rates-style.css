@@ -102,7 +102,7 @@ h3.special-price{
 }
 
 .special-price {
-    animation: red-blink 3s infinite alternate; 
+    animation: red-blink 2s infinite alternate; 
 }
 
 @keyframes red-blink {
