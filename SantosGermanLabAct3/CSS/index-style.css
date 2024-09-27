@@ -11,8 +11,8 @@ main {
     max-width: 800px; 
     width: 80%; 
     height: 15.625rem; 
-    margin: 2.5rem auto 0; 
-    padding: 1.25rem;
+    margin: 2.5rem auto 1rem;    
+    padding: 1rem;
     border-radius: 12px; 
     background-color: white; 
     position: relative; 
@@ -55,7 +55,7 @@ main h2, p {
     margin: auto;
     width: 80%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    animation: dotted-ads 0.5s infinite linear;
+    animation: dotted-ads 2.5s infinite linear;
     
 }
 .ad-banner{
@@ -65,23 +65,21 @@ main h2, p {
     height: auto;
     justify-content: center; 
     align-items: center;   
-    margin-top: -120px; 
+    margin-top: -80px; 
     border: dotted #06397e 5px;
     border-bottom: none;
     
 }
+
 @keyframes dotted-ads {
     0%{
-        /* background-position:  0px 0px, 300px 116px, 0px 150px, 216px 0px; */
         border-color: #fad12c;
-        /* border-width: 5px; */
     }
     100%{
-        /* background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px; */
         border-color: red;
-        /* border-width: 10px; */
     }
 }
+
 #adlogo{
     float:left;  
     height:4rem;
@@ -99,6 +97,7 @@ main h2, p {
     background-color: white;
     border: dotted #06397e 5px;
     border-top: none;
+    margin-bottom: 10px;
 }
 .left-ad{
     display: block;
@@ -164,6 +163,50 @@ main h2, p {
 .right-ad img{
     object-fit: cover;
     width: 100%;
+}
+.avail {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: -200px; 
+}
+
+
+.avail:hover {
+    color: #fad12c; 
+}
+
+.pic-slider {
+    position: relative;
+    overflow: hidden; 
+    width: 100%; 
+    height: 300px; 
+}
+
+.slider {
+    display: flex;
+    animation: slide-animation 5s infinite; 
+}
+
+.slide {
+    min-width: 100%; 
+    transition: transform 0.5s ease; 
+}
+
+.slide img {
+    margin-left: 20px;
+    width: auto; 
+    height: 70px; 
+}
+
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(0); } 
+    36.66% { transform: translateX(-100%); } 
+    66.66% { transform: translateX(-100%); } 
+    69.99% { transform: translateX(-200%); } 
+    100% { transform: translateX(-200%); } 
 }
 
 @media screen and (max-width: 1050px){
